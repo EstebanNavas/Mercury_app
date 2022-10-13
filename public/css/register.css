@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 100px;
+    font-family: 'calibri';
+}
+
+img{
+    margin-left: 65px;
+}
+
+.container h1 {
+    font-size: 25px;
+    color: #8442E5;
+    margin-top: 32px;
+    margin-bottom: 15px;
+    margin-left: 70px;
+}
+
+
+/* .formulario{
+    border-bottom: solid 1px;
+} */
+
+.input1 {
+    width: 90%;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    border: 1px solid #ABB2B9;
+    font-size: 15px;
+}
+
+.input2 {
+    width: 90%;
+    
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid #ABB2B9;
+    
+}
+.input-wrapper {
+	position: relative;
+    margin-bottom: 25px;
+}
+
+.input-icon {
+	color: #555758;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 265px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.input-wrapper2 {
+	position: relative;
+}
+
+.input-icon2 {
+	color: #555758;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 265px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.forgot{
+    margin-left: 185px;
+}
+
+.remember{
+    margin-top: 15px;
+    font-family: 'calibri';
+}
+
+.button{
+    width: 97%;
+    padding: 12px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    border: 1px solid  #c5a7f3;
+    font-size: 15px; 
+    background-color: #c5a7f3;
+    color: rgb(241, 231, 231);
+}
+
+.SingUp {
+    border-top: solid 1px #ABB2B9;
+    width: 500px;
+    margin: auto;
+}
+
+.SingUp p{
+    margin-top: 15px;
+    margin-left: 115px;
+    font-weight: bold;
+    font-family: 'calibri';
+    font-size: 18px;
+}
