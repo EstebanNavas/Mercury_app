@@ -15,7 +15,7 @@
 
         <h1>Create your account</h1>
     <div class="formulario">
-    <form action="">
+    <form action="/register" method="POST">
 
         <input class="input1" type="text" name="email" id="email" placeholder="Email">
 
@@ -28,17 +28,21 @@
         </div>
 
         <div class="input-wrapper2">
-            <input class="input2" type="password" name="password" id="password" placeholder="Repyte Password">
+            <input class="input2" type="password" name="repytePassword" id="repytePassword" placeholder="Repyte Password">
             <svg xmlns="http://www.w3.org/2000/svg" class="input-icon2 password" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                 <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
               </svg>
             </div>
 
-        <a class="forgot" href="">Forgot Password</a>
+            <input class="inputCountry" type="text" name="country" id="country" placeholder="Country of Recidence">
+            <select name="country" id=""></select>
+
+            <input class="inputLanguage" type="text" name="lenguage" id="lenguage" placeholder="English">
+        
 
         <input class="remember" type="checkbox" id="btn" placeholder="Remenber me">
-        <label for="">Remenber me</label>
+        <label for="">By continuing i agree to the <a href="">Terms of service</a> and <a href="">Privacity Policity</a></label>
         
         
         <input class="button" type="submit" value="Log In">
@@ -47,7 +51,8 @@
     
 </div>
 <div class="SingUp">
-    <p> Have an account?<a href="/register"> Log up</a>  instead</p>
+    <p> Have an account?<a href="/"> Log In</a>  instead</p>
 </div>
+<script src="/logic/api.js"></script>
 </body>
 </html>

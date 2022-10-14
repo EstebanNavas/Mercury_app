@@ -93,3 +93,56 @@ img{
     font-family: 'calibri';
     font-size: 18px;
 }
+
+
+/*********************** LOADER *************************/
+
+
+.loader{
+    display: none;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 340px;
+
+}
+
+.loader span{
+    color: blueviolet;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.loader::before,
+.loader::after{
+    inset: 0;
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+}
+
+.loader::before{
+    border-left: 4px solid rgb(109, 39, 167);
+    animation: move-rigth 2s ease-in infinite;
+}
+
+.loader::after{
+    border-right: 4px solid rgb(150, 35, 173);
+    animation: move-left 1s ease-in infinite;
+}
+
+@keyframes move-rigth {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move-left {
+    to{
+        transform: rotate(-360deg);
+    }
+}

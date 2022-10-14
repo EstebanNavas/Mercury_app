@@ -1,7 +1,11 @@
 const express = require('express');
+const methodOverride = require('method-override');
+
 const app = express();
 
 const loginRoutes = require('./routes/login');
+app.use(express.urlencoded({extended: false}))
+app.use(express.json())
 
 app.use('/', loginRoutes);
 

@@ -21,7 +21,7 @@ img{
     color: #8442E5;
     margin-top: 32px;
     margin-bottom: 15px;
-    margin-left: 70px;
+    margin-left: 45px;
 }
 
 
@@ -46,6 +46,26 @@ img{
     border: 1px solid #ABB2B9;
     
 }
+
+.inputCountry{
+    width: 90%;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border: 1px solid #ABB2B9;
+    font-size: 15px;
+}
+
+.inputLanguage{
+    width: 90%;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    border: 1px solid #ABB2B9;
+    font-size: 15px;
+}
+
 .input-wrapper {
 	position: relative;
     margin-bottom: 25px;
