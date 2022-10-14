@@ -80,6 +80,12 @@ img{
     color: rgb(241, 231, 231);
 }
 
+.button:hover{
+    cursor: pointer;
+    background-color: #9c65ef;
+    color: rgb(249, 244, 244);
+}
+
 .SingUp {
     border-top: solid 1px #ABB2B9;
     width: 500px;
