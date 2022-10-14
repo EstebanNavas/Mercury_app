@@ -23,9 +23,15 @@ module.exports = {
         const registerDb = JSON.stringify(register, null, ' ');
         fs.readFile('register.json', 'utf8',(error, data)=>{
             const json = JSON.parse(data)
-            const array = []
-            array.push(json,register)
-            fs.writeFileSync('register.json', JSON.stringify(array, null, ' '));
+            json.push(register)
+            const newJson = JSON.stringify(json, null, 2)
+            fs.writeFileSync('register.json', newJson, (error)=>{
+                if(error ){
+                    console.log('Ah ocurrido un error');
+                    return
+                }
+
+            });
 
         })
 

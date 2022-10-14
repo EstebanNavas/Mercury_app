@@ -1,19 +1,23 @@
 [
- [
-  [],
   {
-   "email": "sasdsa",
-   "password": "sadsa",
-   "repytePassword": "sadasd",
-   "country": "Colombia",
-   "lenguage": "Spanish"
+    "email": "dd",
+    "password": "wdwd",
+    "repytePassword": "sadsa",
+    "country": "Spain",
+    "lenguage": "Spanish"
+  },
+  {
+    "email": "sdwad",
+    "password": "wdwad",
+    "repytePassword": "daawd",
+    "country": "Colombia",
+    "lenguage": "Spanish"
+  },
+  {
+    "email": "hector@gamil.com",
+    "password": "sas",
+    "repytePassword": "sadasd",
+    "country": "México",
+    "lenguage": "Spanish"
   }
- ],
- {
-  "email": "ssad",
-  "password": "sadsad",
-  "repytePassword": "sdsa",
-  "country": "Spain",
-  "lenguage": "Spanish"
- }
 ]
