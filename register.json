@@ -1,7 +1,19 @@
-{
- "email": "saas",
- "password": "asasd",
- "repytePassword": "asdasd",
- "country": "asdasd",
- "lenguage": "asdasd"
-}
+[
+ [
+  [],
+  {
+   "email": "sasdsa",
+   "password": "sadsa",
+   "repytePassword": "sadasd",
+   "country": "Colombia",
+   "lenguage": "Spanish"
+  }
+ ],
+ {
+  "email": "ssad",
+  "password": "sadsad",
+  "repytePassword": "sdsa",
+  "country": "Spain",
+  "lenguage": "Spanish"
+ }
+]

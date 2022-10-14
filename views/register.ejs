@@ -8,7 +8,7 @@
     <title>Register</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         
         <img src="/img/logo blanco.png" alt="">
     
@@ -35,14 +35,30 @@
               </svg>
             </div>
 
-            <input class="inputCountry" type="text" name="country" id="country" placeholder="Country of Recidence">
-            <select name="country" id=""></select>
+           
 
-            <input class="inputLanguage" type="text" name="lenguage" id="lenguage" placeholder="English">
-        
+            <select class="country" name="country" id="country" placeholder="Country of Recidence">
+                <option selected>Country of Recidence</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Spain">Spain</option>
+                <option value="Germany">Germany</option>
+                <option value="United States">United States</option>
+                <option value="México">México</option>
+            </select>
+
+            
+            
+            <select class="language" name="language" id="language">
+                <option value="English">English</option>
+                <option value="German">German</option>
+                <option value="Spanish">Spanish</option>
+                <option value="French">French</option>
+                <option value="Chinese">Chinese</option>
+            </select>
+
 
         <input class="remember" type="checkbox" id="btn" placeholder="Remenber me">
-        <label for="">By continuing i agree to the <a href="">Terms of service</a> and <a href="">Privacity Policity</a></label>
+        <label class="privacity-policity" for="">By continuing I agree to the <a href="">Terms of Service</a> and <a href="">Privacity Policity</a></label>
         
         
         <input class="button" type="submit" value="Log In">
@@ -50,9 +66,38 @@
     </div>  
     
 </div>
-<div class="SingUp">
-    <p> Have an account?<a href="/"> Log In</a>  instead</p>
+<div class="logIn" id="logIn">
+    <p> Have an account?<a id="linkLogin" href="/"> Log In</a>  instead</p>
 </div>
-<script src="/logic/api.js"></script>
+
+<div id="loader" class="loader">
+    <span>LOADING</span>
+</div>
+
+
+<script>
+    const linkLogin = document.getElementById('linkLogin');
+const loader = document.getElementById('loader');
+const container = document.getElementById('container');
+const login = document.getElementById('logIn');
+
+linkLogin.addEventListener('click', (event) =>{
+    event.preventDefault();
+
+    container.style.display= 'none'
+    login.style.display= 'none'
+    loader.style.display= 'flex'
+
+    setTimeout(function (){
+        loader.style.display= 'none'
+        login.style.display= 'block'
+        container.style.display= 'block'
+        window.location = '/';
+    
+      
+    }, 5000)
+})
+
+</script>
 </body>
 </html>

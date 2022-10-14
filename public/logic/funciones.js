@@ -21,3 +21,24 @@ setTimeout(function (){
 
 
 })  
+
+
+const linkLogin = document.getElementById('linkLogin');
+const login = document.getElementById('logIn');
+
+linkLogin.addEventListener('click', (event) =>{
+    event.preventDefault();
+
+    container.style.display= 'none'
+    login.style.display= 'none'
+    loader.style.display= 'flex'
+
+    setTimeout(function (){
+        loader.style.display= 'none'
+        login.style.display= 'block'
+        container.style.display= 'block'
+        window.location = '/';
+    
+      
+    }, 5000)
+})

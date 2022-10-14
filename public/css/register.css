@@ -4,6 +4,7 @@
 
 }
 
+
 .container {
     width: 300px;
     padding: 10px;
@@ -25,10 +26,6 @@ img{
 }
 
 
-/* .formulario{
-    border-bottom: solid 1px;
-} */
-
 .input1 {
     width: 90%;
     padding: 12px;
@@ -47,23 +44,27 @@ img{
     
 }
 
-.inputCountry{
-    width: 90%;
+.country{
+    width: 99%;
     padding: 12px;
-    border-radius: 7px;
+    border-radius: 25px;
     margin-bottom: 25px;
     margin-top: 25px;
     border: 1px solid #ABB2B9;
     font-size: 15px;
+    color: #8442E5;
+    font-weight: bold;
 }
 
-.inputLanguage{
-    width: 90%;
+.language{
+    width: 99%;
     padding: 12px;
-    border-radius: 7px;
+    border-radius: 25px;
     margin-bottom: 25px;
     border: 1px solid #ABB2B9;
     font-size: 15px;
+    color: #8442E5;
+    font-weight: bold;
 }
 
 .input-wrapper {
@@ -101,6 +102,11 @@ img{
 .remember{
     margin-top: 15px;
     font-family: 'calibri';
+    font-weight: bold;
+}
+
+.privacity-policity{
+    font-weight: bold;
 }
 
 .button{
@@ -115,16 +121,69 @@ img{
     color: rgb(241, 231, 231);
 }
 
-.SingUp {
+.logIn {
     border-top: solid 1px #ABB2B9;
     width: 500px;
     margin: auto;
 }
 
-.SingUp p{
+.logIn p{
     margin-top: 15px;
     margin-left: 115px;
     font-weight: bold;
     font-family: 'calibri';
     font-size: 18px;
+}
+
+
+/*********************** LOADER *************************/
+
+
+.loader{
+    display: none;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 340px;
+
+}
+
+.loader span{
+    color: blueviolet;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.loader::before,
+.loader::after{
+    inset: 0;
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+}
+
+.loader::before{
+    border-left: 4px solid rgb(109, 39, 167);
+    animation: move-rigth 2s ease-in infinite;
+}
+
+.loader::after{
+    border-right: 4px solid rgb(150, 35, 173);
+    animation: move-left 1s ease-in infinite;
+}
+
+@keyframes move-rigth {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move-left {
+    to{
+        transform: rotate(-360deg);
+    }
 }
